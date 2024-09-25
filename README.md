@@ -41,7 +41,7 @@
 ## Tips
 - Training model and simulation can be completed on different computers, it means that you can train the model in another computer. But the computer used for simulation still needs to have both python2.7 and python3.8
 ## Dataset Generation
-- Put the lable file ```Annotation.csv``` into ```ros/src/shadow_teleop/data/```. Put the images into ```ros/src/shadow_teleop/data/```.
+- Put the lable file ```Annotation.csv``` into ```ros/src/more/data/```. Put the images into ```ros/src/more/data/```.
 - Save ```Annotation.csv``` as ```Annotation.npy```.
   ```
   python csvnpy.py
@@ -62,7 +62,7 @@
 
     and run an experiment for 100 epoch:
     ```
-    python main.py --epoch 100 --mode 'train' --batch-size 256 --lr 0.01 --gpu 1 --data-path 'home/XX/catkin_ws/ros/src/shadow_teleop/data'
+    python main.py --epoch 100 --mode 'train' --batch-size 256 --lr 0.01 --gpu 1 --data-path 'home/XX/catkin_ws/ros/src/more/data'
     ```
 ## Pretrained Models:
 - creat a folder called "weights" under './'
